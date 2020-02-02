@@ -5,6 +5,7 @@
 # ./build.sh -Due.env=test package
 # ./build.sh -Due.env=prod package
 #
+IIQ_VERSION=7.3
 
 if [ -f "../src/1_ssb-v6.1.zip" ]; then
     echo "Moving SSB into the ./components/ssb-v6.1 directory"
@@ -14,11 +15,11 @@ else
 	exit 1
 fi
 
-if [ -f "../src/identityiq-8.0.zip" ]; then
-    echo "Moving IdentityIQ 8.0 into the ./components/iiq8.0/base/ga directory"
-	cp ../src/identityiq-8.0.zip ./components/iiq8.0/base/ga
+if [ -f "../src/identityiq-${IIQ_VERSION}.zip" ]; then
+    echo "Moving IdentityIQ ${IIQ_VERSION} into the ./components/iiq${IIQ_VERSION}/base/ga directory"
+	cp ../src/identityiq-${IIQ_VERSION}.zip ./components/iiq${IIQ_VERSION}/base/ga
 else 
-	echo "Please place the identityiq-8.0.zip file in the ../src directory of this project"
+	echo "Please place the identityiq-${IIQ_VERSION}.zip file in the ../src directory of this project"
 	exit 1
 fi
 

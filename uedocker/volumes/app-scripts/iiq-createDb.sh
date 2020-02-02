@@ -4,13 +4,14 @@ SCRIPT_FULLPATH=$(realpath "${BASH_SOURCE[0]}")
 SCRIPT_DIR=$(dirname "$SCRIPT_FULLPATH")
 SCRIPT_NAME=$(basename "$SCRIPT_FULLPATH")
 IIQ_FOLDER=$(realpath "${SCRIPT_DIR}"/..)
+IIQ_VERSION=7.3
 
 # Default SP_HOME if not set...
 SP_HOME="${SP_HOME:-/ue/iiq/tomcat/webapps/ue}"
 MYSQL_HOST="localhost"
 
 CREATION_SCRIPTS=(
-        "${SP_HOME}/database/create_identityiq_tables-8.0.mysql"
+        "${SP_HOME}/database/create_identityiq_tables-${IIQ_VERSION}.mysql"
     )
 
 UPDATE_SCRIPTS=(
