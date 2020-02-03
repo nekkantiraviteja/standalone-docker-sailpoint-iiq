@@ -4,7 +4,7 @@ SCRIPT_FULLPATH=$(realpath "${BASH_SOURCE[0]}")
 SCRIPT_DIR=$(dirname "$SCRIPT_FULLPATH")
 SCRIPT_NAME=$(basename "$SCRIPT_FULLPATH")
 IIQ_FOLDER=$(realpath "${SCRIPT_DIR}"/..)
-IIQ_VERSION=7.3
+IIQ_VERSION=8.0
 
 # Default SP_HOME if not set...
 SP_HOME="${SP_HOME:-/ue/iiq/tomcat/webapps/ue}"

@@ -5,7 +5,7 @@
 # ./build.sh -Due.env=test package
 # ./build.sh -Due.env=prod package
 #
-IIQ_VERSION=7.3
+IIQ_VERSION=8.0
 
 rm -f ../src/*
 rm -fR ../release

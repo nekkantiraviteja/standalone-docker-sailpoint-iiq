@@ -6,7 +6,7 @@
 #shopt -s extglob
 
 # @todo Work out way to detect it...
-IIQ_VERSION=7.3
+IIQ_VERSION=8.0
 
 WAR_PATH="./ue#local-dev-${IIQ_VERSION}.war"
 if [ ! -f "${WAR_PATH}" ]; then
