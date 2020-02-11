@@ -100,8 +100,8 @@ ap
 Run the `bootstrap.sh build` script and you're good to go.
 
 ###NOTE: From the Accelerator Pack 8.0 Release Notes
-After installation and upon startup, there may be some errors similar to: 
-property x is not defined in ObjectConfig 
+After installation and upon startup, there may be some errors similar to:
+property x is not defined in ObjectConfig
 These are innocuous errors that will not affect the functionality of the Accelerator Pack or IdentityIQ.
 
 # Usage
@@ -116,7 +116,7 @@ Password: admin
 By default we have given Tomcat limited resources to keep the memory sizes down, so it may take a few minutes for the container to warm up and no longer throw a 500 error.
 
 # Additional Info
-This is a great way to get developers up and running with IdentityIQ very quickly. These same principles can be extended to your integrated development, test and production environments. If you're looking to apply continuous integration, continuous delivery and docker or kubernetes based containers in your environment please reach out to us at [hello@uberether.com](mailto:hello@uberether.com) and we'd love to help you and your team be more efficient in your SailPoint development process.
+This is a great way to get developers up and running with IdentityIQ very quickly. These same principles can be extended to your integrated development, test and production environments. If you're looking to apply continuous integration, continuous delivery and docker or kubernetes based containers in your environment please reach out to us at and we'd love to help you and your team be more efficient in your SailPoint development process.
 
 To get an idea of what this might look like, here is what a typical CI/CD docker based deployment looks like for our customers:
 
